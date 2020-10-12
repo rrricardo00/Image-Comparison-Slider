@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Comparison Slider</title>
 </head>
-<body>
+<body style="position: relative">
 
     <style>
         section{
@@ -13,8 +13,12 @@
             height: 100vh;
             overflow: hidden;
             background: url(img1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
             position: relative;
             background-attachment: fixed;
+
         }
         #layer{
             position: absolute;
@@ -23,6 +27,9 @@
             top: 0;
             left: 50%;
             background: url(img2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
             border-left: 2px solid #000;
             background-attachment: fixed;
 
